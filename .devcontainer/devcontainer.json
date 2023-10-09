@@ -1,0 +1,4 @@
+{
+	"name": "Node.js",
+	"image": "mcr.mircrsoft.com/devcontainer/javascript-node:0-18"
+}
