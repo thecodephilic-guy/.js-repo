@@ -1,9 +1,9 @@
 const name = "Sohail"   //one way of declaring the string
-const repoCount = 25
+const repoCount = 10
 
 // console.log(name + repoCount + " Value");   //This is a bit outdated method of console.log()
 
-console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);   //this is the morder way of writing and it is more readable
+console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);   //this is the modern way of writing and it is more readable
 
 //another way of declaring the string:
 const yourName = new String("Sohail Ansari")
@@ -18,9 +18,30 @@ console.log(yourName.toUpperCase());    //outpur - SOHAIL ANSARI
 console.log(yourName.charAt(8));    //output - n
 console.log(yourName.indexOf("A")); //output - 7
 
+const newString = yourName.substring(0, 4)  //last index is non-inclusive
+console.log(newString);
 
+const anotherString = yourName.slice(-13, 4)  // how it's diffrent from .substring? The difference is that it can
+console.log(anotherString);                 // take negative values too and -ve index represent the values from back of the string. This is the reason it'll give the same output.
 
+const newStringOne = "  Sohail  "
+//printing newStringOne without trimming
+console.log(newStringOne);
+//printing newStringOne with trim fucntion:
+console.log(newStringOne.trim());     //.trim() removes the white spaces and the line terminators from any string.
 
+const url = "https://github.com/thecodephilic-guy/.js-repo";    //very much usable in backend development
+console.log(url.replace("thecodephilic-guy", "thephotophilic_guy"));
+
+//asking questions to get the boolean output:
+console.log(url.includes("Code"));  //false
+console.log(url.includes(".js-repo"));  //true
+
+//converting a string into the array:
+const fruits = "apple-mango-grapes-banana"
+fruitsArray = fruits.split("-")     //splitter can be anthing here it is "-"
+console.log(fruitsArray); //output -> [ 'apple', 'mango', 'grapes', 'banana' ]
+console.log(fruitsArray[2]);    //output -> grapes
 
 /*
     Some more prototypes:
@@ -79,5 +100,7 @@ console.log(yourName.indexOf("A")); //output - 7
     trimStart: ƒ trimStart()
     valueOf: ƒ valueOf()
     Symbol(Symbol.iterator): ƒ [Symbol.iterator]()
+
+    read the detailed documentation of the above methods on mdn
 
 */
