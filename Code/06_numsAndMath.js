@@ -42,6 +42,22 @@ console.log(Math.abs(-6));  //output: 6 (return the absolute value)
 console.log(Math.round(3.14)); //output: 3 (normal rounding off i.e if decimal digit is larger than 5 then returns next number)
 console.log(Math.ceil(3.14)); //output: 4 (returns the ceiling value after rounding off)
 console.log(Math.floor(3.94)); //output: 3 (returns the floor value after rounding off)
+console.log(Math.min(4,3,6,8)); //output: 3
+console.log(Math.max(4,3,6,8)); //output: 8
+
+//the most use case of Math library is the random function:
+console.log(Math.random()); //it gives the output between 0 and 1 (where 1 is exclusive);
+
+//we can extend the range using multiplication:
+console.log(Math.random()*10);    //now the numbers generated will be between 0 and 10 (10 being exclusive)
+
+//now let's look at one of the most used case of random function:
+const min = 10; //initial value of range
+const max = 20; //final value of range
+
+//now the formula:
+console.log(Math.floor(Math.random() * (max - min + 1)) + min); //interprate it matually to better understand this concept.
+
 /*
     Properties offered by Math libraray:
 
